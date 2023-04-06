@@ -38,5 +38,5 @@ select * from my_friends_2;
 # NOTE:-
 #      ERROR 1175: ** You are using safe update mode & you tried to update table without WHERE clause **
 #      SOLUTION:-  
-			/*	Go to Edit --> select Preferences --> click SQL-editor --> In bottom window --> 
-                ---> [Untick the box] = " Reject UPDATEs & DELETEs with no restrictions "     */
+      /*	Go to Edit --> select Preferences --> click SQL-editor --> In bottom window --> 
+                ---> [Untick the box] = " Reject UPDATEs & DELETEs with no restrictions "        */
