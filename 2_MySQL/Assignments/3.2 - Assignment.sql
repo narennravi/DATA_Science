@@ -6,13 +6,11 @@
 
 
 #SOLUTION : 1
-
 Create database Company;
 use Company;
 
 
 #SOLUTION : 2
-
 Create table Employee
    (
     id       int NOT NULL,
