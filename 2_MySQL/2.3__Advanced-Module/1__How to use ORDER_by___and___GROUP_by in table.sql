@@ -11,7 +11,7 @@ CREATE TABLE my_friends
 
 insert into my_friends 
 values
-	 ('Kavitha','Ramasamy','F',17,'Trichy'),
+     ('Kavitha','Ramasamy','F',17,'Trichy'),
      ('Nagendraa','Reddy','M',18,'Guntur'),
      ('Jenifer','David','F',16,'kerala'),
      ('Syed','fazil','M',20,'Nagore'),
