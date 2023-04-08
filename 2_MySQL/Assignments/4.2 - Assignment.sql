@@ -3,7 +3,7 @@
 /*
 Consider the table Student.
 
-ID	   NAME	  AGE
+ID	   NAME	    AGE
 1	 Vinodini	 25
 2	 Banu    	 27
 3	 kaushik 	 23
