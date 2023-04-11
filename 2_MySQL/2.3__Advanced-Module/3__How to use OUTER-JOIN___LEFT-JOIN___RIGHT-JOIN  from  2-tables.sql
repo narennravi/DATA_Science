@@ -2,15 +2,53 @@
 SQL JOIN:-
         A JOIN clause is used to combine rows from two or more tables, based on a related column between them.
 
-Inner Join:-
-       The most important and frequently used of the joins is the INNER JOIN. 
-       They are also referred to as an EQUIJOIN.
-       INNER JOIN creates a new resulttable by combining column values of two tables (table1 and table2) based upon the join-predicate. 
-       The query compares each row of table1 with each row of table2 to find all pairs of rows which satisfy the join-predicate. 
-       When the join-predicate is satisfied, column values for each matched pair of rows of A and B are combined into a result row.
 
-Syntax :-
-     SELECT table1.column1, table2.column2...FROM table1 INNER JOIN table2 ON table1.common_field = table2.common_field;
+INNER JOIN:-
+       The most important and frequently used of the joins is the INNER JOIN  &  also referred to as an EQUIJOIN.
+       The INNER JOIN keyword selects records that have matching values in both tables(table-1 & table-2).
+
+
+Syntax  [INNER JOIN]:-
+
+    SELECT column_name(s)
+    FROM table1
+    INNER JOIN table2
+    ON table1.column_name = table2.column_name;
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+LEFT JOIN:-
+       LEFT JOIN keyword returns all records from the left table (table1), and the matching records (if any) from the right table (table2).
+
+
+Syntax  [LEFT JOIN]:-
+
+    SELECT column_name(s)
+    FROM table1
+    LEFT JOIN table2
+    ON table1.column_name = table2.column_name;
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+RIGHT JOIN:-
+       RIGHT JOIN keyword returns all records from the right table (table2), and the matching records (if any) from the left table (table1).
+
+
+Syntax  [RIGHT JOIN]:-
+   
+    SELECT column_name(s)
+    FROM table1
+    RIGHT JOIN table2
+    ON table1.column_name = table2.column_name;
+#------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+CROSS JOIN:-
+       CROSS JOIN keyword returns all records from both tables (table1 and table2).
+
+
+Syntax  [CROSS JOIN]:-
+
+    SELECT column_name(s)
+    FROM table1
+    CROSS JOIN table2;
 #------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 */
 
@@ -110,4 +148,21 @@ from
 Table_A  A right join Table_B  B
 on A.first_name = B.first_name;
 
-#--------------------------------------------------------------------------------------------------------------------------------- 
+#---------------------------------------------------------------------------------------------------------------------------------
+
+#  _____CROSS_Join_____:-
+select * from Table_A;
+select * from Table_B;				      
+
+# Cross join --> returns all records from both tables (table1 and table2)				      
+select A.first_name, A.last_name, A.age, A.sex, A.mail, B.first_name, B.course, B.office_name, B.salary, B.city 
+from 
+Table_A  A  cross join  Table_B  B;
+
+#---------------------------------------------------------------------------------------------------------------------------------
+				      
+				      
+				      
+				      
+				      
+				      
