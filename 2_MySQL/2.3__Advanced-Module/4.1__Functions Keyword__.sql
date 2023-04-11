@@ -1,3 +1,22 @@
+/*
+String Functions :-
+MySQL string functions we can use to manipulate data and derive useful information and analysis from the tables. 
+These functions can be used along with update commands to change records or can be used to update multiple tables
+
+Types of String-functions:-
+        1. Lower/lcase
+        2. Upper/ucase
+        3. Mid
+        4. Concat
+        5. Length
+        6. Reverse
+        7. Trim - ltrim | Rtrim
+
+# NOTE:-
+       String function is used mandatorily along with the SELECT - statement.
+*/
+
+
 #LOWER-case:-
 select lower('SQL is Awesome.!');
 select lcase('Sql is AWESOME.,');
@@ -21,14 +40,14 @@ select concat('kaviya  ','Madhavan') as concated_value;     #Two separate string
 
 
 #LENGTH:-
-select length('Shiva loves Sakthi');        #Displays length of string + space is also included during count of sting.
+select length('Shiva loves Sakthi');                        #Displays length of string + space is also included during count of sting.
 
 
 #REVERSE:-
-select reverse('Madhya_pradesh');          #String will be reversed
+select reverse('Madhya_pradesh');                           #String will be reversed
 
 
 #TRIM:-
-select ltrim('   Rajesh_kannan ');                 #ltrim --> left side unwanted space will be removed
-select rtrim('kavitha_lakshmi    ');               #rtrim --> right side unwanted space will be removed
-select trim('    hi sir good to meet you..!  ');   #trim  --> all unwanted space(left + right) will removed
+select ltrim('   Rajesh_kannan ');                          #ltrim --> left side unwanted space will be removed
+select rtrim('kavitha_lakshmi    ');                        #rtrim --> right side unwanted space will be removed
+select trim('    hi sir good to meet you..!  ');            #trim  --> all unwanted space(left + right) will removed
