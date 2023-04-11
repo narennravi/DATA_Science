@@ -35,6 +35,16 @@ INSERT INTO myfriends(last_name,first_name,suffix,sex,city,state,age) VALUES('mo
 INSERT INTO myfriends(last_name,first_name,suffix,sex,city,state,age) VALUES('Bali','Bahu','Amer','M','MahilMadi','MM',25);
 INSERT INTO myfriends(last_name,first_name,suffix,sex,city,state,age) VALUES('dummy','dummy','dummy','D','DD','MM',25);
 
-Select count(*) from myfriends;            # 3-unique records were inserted to table"myfriends"
+Select count(*) from myfriends;                 # 3-unique records were inserted to table"myfriends"
 
 select * from myfriends;
+
+
+
+
+# NOTE:-
+#     To let the AUTO_INCREMENT sequence start with another value, use the following SQL statement:
+
+
+# SOLUTIONS:-
+ALTER TABLE Persons AUTO_INCREMENT=100;         # If u want index to start from 100 we can allot like this
