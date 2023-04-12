@@ -136,3 +136,5 @@ select * from TAble_1;
       The deleted values in Table-1 got reflected & triggered(Deleted) into Table_2 also.      
 */
 #------------x-------------x-------------x-------------x------------x------------x-----------x-------------x-----------x----------x---------x--------x
+
+SHOW Triggers;                           #Display all trigger named contents.
