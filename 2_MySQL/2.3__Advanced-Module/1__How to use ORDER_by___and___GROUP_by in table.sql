@@ -26,6 +26,10 @@ select * from my_friends;
        2. Order by is of two types:-
              DESC - Descending order
              ASC  - Ascending order
+             
+   Syntax:
+        SELECT  --column-names--  FROM --table_name--  WHERE --condition--  ORDER BY ---column1, column2, .. columnN---  ASC;     --->  "Ascending order"
+        SELECT  --column-names--  FROM --table_name--  WHERE --condition--  ORDER BY ---column1, column2, .. columnN---  DESC;    --->  "Descending order"
 */     
 
 
@@ -62,7 +66,11 @@ select first_name,age from my_friends order by first_name DESC, age DESC LIMIT 3
 #x------------x--------------x--------------x----------------x-----------------x----------------x----------------x----------------x
 #  GROUP-BY:-
 /*        1. Group-by is used to group the rows which have same-value & pick up data
-          2. It is also used to Differentiate and filter the records based on Sex, salary, location          
+          2. It is also used to Differentiate and filter the records based on Sex, salary, location     
+          
+   Syntax:-
+        SELECT --statements-- FROM --table-name-- GROUP BY --column-name--;                         # Without Having - condition
+        SELECT --statements-- FROM --table-name-- GROUP BY --column-name-- HAVING --condition--;    # With Having - condition
 */
 
 
