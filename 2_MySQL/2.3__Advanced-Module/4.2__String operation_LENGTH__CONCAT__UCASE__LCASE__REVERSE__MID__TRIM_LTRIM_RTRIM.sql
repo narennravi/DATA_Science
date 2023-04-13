@@ -1,3 +1,57 @@
+/*
+String Functions :
+           1. MySQL string functions we can use to manipulate data and derive useful information and analysis from the tables. 
+           2. These functions can be used along with update commands to change records or can be used to update multiple tables.
+
+__________________________________________________________________________________________________________________________________________________________________________
+CONCAT:-
+      Combines two strings into one string
+
+Syntax:
+     SELECT CONCAT(--existing-columns--)  AS  --new-col-name--  from  --table-name--;
+__________________________________________________________________________________________________________________________________________________________________________
+LENGTH:-
+      Displays length of selective column
+
+Syntax:
+     SELECT LENGTH(--existing-columns--)  AS  --new-col-name--  from  --table-name--; 
+__________________________________________________________________________________________________________________________________________________________________________
+LOWER:-
+      Converts a String to Lowercase.
+
+Syntax:
+     SELECT LOWER('-string-')  from  --table-name--; 
+__________________________________________________________________________________________________________________________________________________________________________
+UPPER:-
+     Converts a String to Uppercase.
+
+Syntax:
+     SELECT  UPPER('-string-')  from  --table-name--; 
+__________________________________________________________________________________________________________________________________________________________________________
+MID:-
+    Extracts a substring from a string (starting at any position)
+
+Syntax:
+     SELECT  MID('-string-', 5, 3)  AS  --(extract)_col-name--  from  --table-name--; 
+__________________________________________________________________________________________________________________________________________________________________________
+TRIM:-
+     Trims the particular blank-space/white-space  based on sides=(ledt | right | Both)
+
+Syntax:
+      SELECT  TRIM(--col-name--) AS  --new-col-name--  from  --table-name--;     =  Trim(Left+Right)
+      SELECT  LTRIM(--col-name--) AS  --new-col-name--  from  --table-name--;    =  Left trim
+      SELECT  RTRIM(--col-name--) AS  --new-col-name--  from  --table-name--;    =  Right Trim
+__________________________________________________________________________________________________________________________________________________________________________
+REVERSE:-
+      Displays Reveresal form of selected column
+
+Syntax:
+      SELECT REVERSE(--col-name--) AS  --new-col-name--  from  --table-name--;
+__________________________________________________________________________________________________________________________________________________________________________
+*/
+
+
+
 use my_sql_practice;
 select * from my_friends;
  
