@@ -1,4 +1,20 @@
-#UPDATE & DELETE:-
+/*  
+UPDATE:-
+     1. The SQL UPDATE Query is used to modify the existing records in a table. 
+     2. You can use the WHERE clause with the UPDATE query to update the selected rows, otherwise all the rows would be affected.
+
+Syntax :
+      UPDATE --table_name-- SET  column1 = value1, column2 = value2...., columnN = valueN  WHERE --condition--;
+____________________________________________________________________________________________________________________________________________________________________________
+DELETE:-
+      1. The SQL DELETE Query is used to delete the existing records from a table.
+      2. You can use the WHERE clause with a DELETE query to delete the selected rows, otherwise all the records would be deleted.
+
+Syntax:
+     DELETE FROM --table_name-- WHERE --condition--;
+____________________________________________________________________________________________________________________________________________________________________________
+
+*/
 
 use my_sql_practice;
 select * from my_friends_2;
@@ -21,7 +37,7 @@ select first_name,last_name from my_friends_2;
 
 #----------------------------------------------------------------------------------------------------------------------------------------------
 
-#    2. DELETE
+#    2. DELETE:-
 
 select * from my_friends_2;
 
